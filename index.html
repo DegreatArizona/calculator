@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <link rel="icon" href="icon.png" type="image/icon" />
+  <script src="index.js"></script>
+  <title>Arizona Calculator</title>
+</head>
+<body>
+    
+    
+    
+    <center><section class="main-body">
+      <input type="tel" name="display" id="display" class="display-input" value="" readonly/>
+      <section class="in-body">
+              <div class="row">
+        <input type="button" name="symbol" id="arch" onclick="display.value=''" value="AC" style="width:70px; padding-left:20px; padding-right:60px;" />
+        <input type="button" name="symbol" id="arch" onclick="display.value=display.value.slice(0, -1)" value="C" />
+        <input type="button" name="symbol" id="arch" onclick="display.value+='%'" value="%" />
+        <input type="button" name="symbol" id="yel" onclick="display.value+='/'" value="/" />
+      </div>
+            <div class="row">
+        <input type="button" name="symbol" id="bla" onclick="display.value+='7'" value="7" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='8'" value="8" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='9'" value="9" />
+        <input type="button" name="symbol" id="yel" onclick="display.value+='*'" value="×" />
+      </div>
+            <div class="row">
+        <input type="button" name="symbol" id="bla" onclick="display.value+='4'" value="4" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='5'" value="5" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='6'" value="6" />
+        <input type="button" name="symbol" id="yel" onclick="display.value+='-'" value="-" />
+      </div>
+            <div class="row">
+        <input type="button" name="symbol" id="bla" onclick="display.value+='1'" value="1" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='2'" value="2" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='3'" value="3" />
+        <input type="button" name="symbol" id="yel" onclick="display.value+='+'" value="+" />
+      </div>
+            <div class="row">
+        <input type="button" name="symbol" id="bla" onclick="display.value+='0'" value="0" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='00'" value="00" />
+        <input type="button" name="symbol" id="bla" onclick="display.value+='.'" value="." />
+        <input type="button" name="symbol" id="yel" onclick="display.value=eval(display.value)" value="=" />
+      </div>
+      </section>
+    </section></center>
+    
+</body>
+</html>
